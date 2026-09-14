@@ -1,4 +1,4 @@
-﻿import gsap from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 
@@ -9,11 +9,14 @@ if (typeof window !== 'undefined') {
   window.ScrollTrigger = ScrollTrigger;
 }
 
-// 1. Master Smooth Scroll Engine
+// Check user motion preferences
+const prefersReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// 1. Master Smooth Scroll Engine (Disabled/instant when reduced motion is preferred)
 const lenis = new Lenis({
-  duration: 1.15,
+  duration: prefersReducedMotion ? 0.1 : 1.15,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smoothWheel: true,
+  smoothWheel: !prefersReducedMotion,
   touchMultiplier: 1.5,
 });
 
@@ -26,7 +29,7 @@ gsap.ticker.lagSmoothing(0);
 
 // 2. Scene 01: Opening Elastic Triptych Column Expansion Machine (Desktop / Landscape >= 1024px)
 const triptychCols = document.querySelectorAll('.triptych-column');
-if (triptychCols.length === 3) {
+if (triptychCols.length === 3 && !prefersReducedMotion) {
   triptychCols.forEach((col, idx) => {
     col.addEventListener('mouseenter', () => {
       if (window.innerWidth < 1024) return;
@@ -62,10 +65,10 @@ if (triptychCols.length === 3) {
   });
 }
 
-// 3. Scroll-Driven Master State Machines (Only on Desktop / Landscape >= 1024px)
+// 3. Scroll-Driven Master State Machines (Only on Desktop / Landscape >= 1024px and no reduced-motion)
 const mm = gsap.matchMedia();
 
-mm.add('(min-width: 1024px)', () => {
+mm.add('(min-width: 1024px) and (prefers-reduced-motion: no-preference)', () => {
   // TIMELINE 1: Opening Triptych Scroll Takeover to 100vw
   const heroTl = gsap.timeline({
     scrollTrigger: {
