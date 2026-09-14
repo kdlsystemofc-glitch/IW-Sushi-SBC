@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @layer base {
   :root {
@@ -48,6 +48,12 @@
   font-family: 'Cinzel', serif;
 }
 
+/* Kinetic Stroke Typography for Ambient Motion Layer */
+.text-stroke {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.12);
+  color: transparent;
+}
+
 /* Elastic Triptych Column Transitions */
 .triptych-column {
   transition: flex-grow 0.65s var(--ease-cinematic), filter 0.65s var(--ease-cinematic);
@@ -67,4 +73,3 @@
 .will-change-clip {
   will-change: clip-path, transform, opacity;
 }
-

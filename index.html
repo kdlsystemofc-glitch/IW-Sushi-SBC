@@ -190,16 +190,16 @@
   <!-- ========================================================= -->
   <section id="scene-fogo-section" class="w-screen h-screen relative overflow-hidden flex flex-col justify-between bg-[#040405] z-30">
     
-    <!-- Kinetic Background Marquee Text -->
-    <div class="absolute inset-0 flex items-center pointer-events-none opacity-20 overflow-hidden z-0">
-      <div id="fogo-marquee-band" class="font-['Syne'] text-[18vw] font-black uppercase whitespace-nowrap text-stroke select-none">
+    <!-- Kinetic Background Marquee Text (Posicionado no terço inferior / meio atrás dos cards para textura arquitetônica pura sem colisão tipográfica) -->
+    <div class="absolute inset-x-0 bottom-24 sm:bottom-32 flex items-center pointer-events-none overflow-hidden z-0 select-none">
+      <div id="fogo-marquee-band" class="font-['Syne'] text-[14vw] font-black uppercase whitespace-nowrap text-stroke will-change-transform leading-none opacity-40">
         QUENTES & CHAPA • MAÇARICO AO VIVO • YAKISOBA ARTESANAL • IWÁ SUSHI • 
       </div>
     </div>
 
-    <!-- Header da Cena -->
+    <!-- Header da Cena com Z-index Superior e Isolamento de Leitura -->
     <div class="relative z-10 p-6 sm:p-12 md:p-16 max-w-7xl mx-auto w-full">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8 bg-gradient-to-b from-[#040405] via-[#040405]/95 to-transparent">
         <div>
           <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block mb-2">
             02 // A TEMPERATURA DA COZINHA
@@ -218,7 +218,7 @@
     <div class="relative z-10 max-w-7xl mx-auto w-full px-6 sm:px-12 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 my-auto">
       
       <!-- Card Imagem 1: Yakisoba Fumegante -->
-      <div id="fogo-card-1" class="relative h-[260px] sm:h-[340px] md:h-[400px] overflow-hidden bg-black border border-white/15">
+      <div id="fogo-card-1" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
         <img 
           src="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.jpg" 
           alt="Yakisoba Artesanal na Chapa" 
@@ -232,7 +232,7 @@
       </div>
 
       <!-- Card Imagem 2: Flambado Maçaricado com Ovas -->
-      <div id="fogo-card-2" class="relative h-[260px] sm:h-[340px] md:h-[400px] overflow-hidden bg-black border border-white/15">
+      <div id="fogo-card-2" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
         <img 
           src="/imagens/imgi_19_673740382_122167708862734250_4983277055982216717_n.jpg" 
           alt="Uramaki Especial Flambado com Ovas" 
