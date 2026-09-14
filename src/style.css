@@ -28,7 +28,15 @@
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
   }
+}
+
+/* Safari / WebKit Viewport Height Normalizer */
+.h-screen-dvh {
+  height: 100vh;
+  height: 100dvh;
 }
 
 /* Custom Font Family Utilities */
