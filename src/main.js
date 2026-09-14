@@ -24,12 +24,12 @@ gsap.ticker.add((time) => {
 });
 gsap.ticker.lagSmoothing(0);
 
-// 2. Scene 01: Opening Elastic Triptych Column Expansion Machine (Desktop)
+// 2. Scene 01: Opening Elastic Triptych Column Expansion Machine (Desktop / Landscape >= 1024px)
 const triptychCols = document.querySelectorAll('.triptych-column');
 if (triptychCols.length === 3) {
   triptychCols.forEach((col, idx) => {
     col.addEventListener('mouseenter', () => {
-      if (window.innerWidth < 768) return;
+      if (window.innerWidth < 1024) return;
       triptychCols.forEach((c, i) => {
         const img = c.querySelector('img');
         if (i === idx) {
@@ -49,7 +49,7 @@ if (triptychCols.length === 3) {
     });
 
     col.addEventListener('mouseleave', () => {
-      if (window.innerWidth < 768) return;
+      if (window.innerWidth < 1024) return;
       triptychCols.forEach((c) => {
         c.style.flexGrow = '1';
         const img = c.querySelector('img');
@@ -62,10 +62,10 @@ if (triptychCols.length === 3) {
   });
 }
 
-// 3. Scroll-Driven Master State Machines (Only on Desktop/Tablet)
+// 3. Scroll-Driven Master State Machines (Only on Desktop / Landscape >= 1024px)
 const mm = gsap.matchMedia();
 
-mm.add('(min-width: 768px)', () => {
+mm.add('(min-width: 1024px)', () => {
   // TIMELINE 1: Opening Triptych Scroll Takeover to 100vw
   const heroTl = gsap.timeline({
     scrollTrigger: {
