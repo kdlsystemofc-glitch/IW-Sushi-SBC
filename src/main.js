@@ -27,6 +27,19 @@ gsap.ticker.add((time) => {
 });
 gsap.ticker.lagSmoothing(0);
 
+// Smooth anchor navigation handling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    if (targetId === '#' || targetId === '') return;
+    const targetEl = document.querySelector(targetId);
+    if (targetEl) {
+      e.preventDefault();
+      lenis.scrollTo(targetEl, { offset: 0, duration: 1.2 });
+    }
+  });
+});
+
 // 2. Scene 01: Opening Elastic Triptych Column Expansion Machine (Desktop / Landscape >= 1024px)
 const triptychCols = document.querySelectorAll('.triptych-column');
 if (triptychCols.length === 3 && !prefersReducedMotion) {
