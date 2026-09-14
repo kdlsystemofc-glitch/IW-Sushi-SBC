@@ -1,0 +1,8 @@
+﻿# Production robots.txt for IWÁ Sushi SBC
+User-agent: *
+Allow: /
+Disallow: /explore-01.html
+Disallow: /explore-02.html
+Disallow: /explore-03.html
+
+Sitemap: https://iwasushisbc.com.br/sitemap.xml
