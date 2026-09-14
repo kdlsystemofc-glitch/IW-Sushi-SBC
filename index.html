@@ -6,10 +6,10 @@
   <title>IWÁ Sushi SBC — Culinária Japonesa Contemporânea no Planalto</title>
   <meta name="description" content="O rigor do corte artesanal, o frescor dos pescados nobres e a atmosfera contemporânea do melhor rodízio japonês de São Bernardo do Campo." />
 
-  <!-- Google Fonts: Syne & Space Grotesk & Plus Jakarta Sans -->
+  <!-- Preconnect and Google Fonts with display=swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./src/style.css">
 </head>
@@ -28,12 +28,18 @@
         id="triptych-col-1" 
         class="triptych-column flex-1 relative overflow-hidden h-full border-b lg:border-b-0 lg:border-r border-white/10 cursor-pointer"
       >
-        <img 
-          id="triptych-img-1"
-          src="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.jpg" 
-          alt="Ceviche e Pescados Frescos em Cerâmica Vulcânica" 
-          class="w-full h-full object-cover object-[65%_center] filter brightness-[0.78] contrast-[1.1] transition-transform duration-700"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.webp" type="image/webp">
+          <img 
+            id="triptych-img-1"
+            src="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.jpg" 
+            alt="Ceviche e Pescados Frescos em Cerâmica Vulcânica" 
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+            class="w-full h-full object-cover object-[65%_center] filter brightness-[0.78] contrast-[1.1] transition-transform duration-700"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60 pointer-events-none"></div>
         
         <div id="triptych-content-1" class="absolute bottom-4 sm:bottom-6 lg:bottom-28 left-4 sm:left-6 lg:left-8 right-4 sm:right-6 lg:right-8 pointer-events-none transition-transform duration-500">
@@ -48,12 +54,18 @@
         id="triptych-col-2" 
         class="triptych-column flex-1 relative overflow-hidden h-full border-b lg:border-b-0 lg:border-r border-white/10 cursor-pointer"
       >
-        <img 
-          id="triptych-img-2"
-          src="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.jpg" 
-          alt="Yakisoba Fumegante e Pratos Quentes" 
-          class="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.1] transition-transform duration-700"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.webp" type="image/webp">
+          <img 
+            id="triptych-img-2"
+            src="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.jpg" 
+            alt="Yakisoba Fumegante e Pratos Quentes" 
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+            class="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.1] transition-transform duration-700"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60 pointer-events-none"></div>
         
         <div id="triptych-content-2" class="absolute bottom-4 sm:bottom-6 lg:bottom-28 left-4 sm:left-6 lg:left-8 right-4 sm:right-6 lg:right-8 pointer-events-none transition-transform duration-500">
@@ -68,12 +80,18 @@
         id="triptych-col-3" 
         class="triptych-column flex-1 relative overflow-hidden h-full cursor-pointer"
       >
-        <img 
-          id="triptych-img-3"
-          src="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.jpg" 
-          alt="Mesa Farta de Rodízio com Teppanyaki" 
-          class="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.08] transition-transform duration-700"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.webp" type="image/webp">
+          <img 
+            id="triptych-img-3"
+            src="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.jpg" 
+            alt="Mesa Farta de Rodízio com Teppanyaki" 
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+            class="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.08] transition-transform duration-700"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60 pointer-events-none"></div>
         
         <div id="triptych-content-3" class="absolute top-4 sm:top-auto sm:bottom-24 lg:bottom-28 left-4 sm:left-6 lg:left-8 right-4 sm:right-6 lg:right-8 pointer-events-none transition-transform duration-500">
@@ -148,22 +166,32 @@
     
     <!-- Layer 1 Base: Ceviche em Cerâmica Vulcânica (imgi_12) -->
     <div id="rigor-layer-base" class="absolute inset-0 z-0">
-      <img 
-        src="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.jpg" 
-        alt="Ceviche em Cerâmica Vulcânica" 
-        class="w-full h-full object-cover object-[65%_center] filter brightness-[0.78] contrast-[1.12]"
-      >
+      <picture>
+        <source srcset="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.webp" type="image/webp">
+        <img 
+          src="/imagens/imgi_12_675248928_122167709024734250_5661503535619530110_n.jpg" 
+          alt="Ceviche em Cerâmica Vulcânica" 
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover object-[65%_center] filter brightness-[0.78] contrast-[1.12]"
+        >
+      </picture>
       <div class="absolute inset-0 bg-gradient-to-r from-[#08080a] via-[#08080a]/75 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#08080a] via-transparent to-[#08080a]/80"></div>
     </div>
 
     <!-- Layer 2 Mask: Lâminas de Salmão em Caldo Dourado e Mãos de Hospitalidade (imgi_49) -->
     <div id="rigor-layer-mask" class="absolute inset-0 z-10 overflow-hidden" style="clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);">
-      <img 
-        src="/imagens/imgi_49_644503969_122162936264734250_8683500687933434083_n.jpg" 
-        alt="Lâminas de Salmão em Caldo Dourado" 
-        class="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
-      >
+      <picture>
+        <source srcset="/imagens/imgi_49_644503969_122162936264734250_8683500687933434083_n.webp" type="image/webp">
+        <img 
+          src="/imagens/imgi_49_644503969_122162936264734250_8683500687933434083_n.jpg" 
+          alt="Lâminas de Salmão em Caldo Dourado" 
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
+        >
+      </picture>
       <div class="absolute inset-0 bg-gradient-to-r from-[#08080a] via-[#08080a]/60 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#08080a] via-transparent to-[#08080a]/70"></div>
     </div>
@@ -236,11 +264,16 @@
       
       <!-- Card Imagem 1: Yakisoba Fumegante -->
       <div id="fogo-card-1" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
-        <img 
-          src="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.jpg" 
-          alt="Yakisoba Artesanal na Chapa" 
-          class="w-full h-full object-cover object-center filter brightness-[0.85] contrast-[1.12]"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.webp" type="image/webp">
+          <img 
+            src="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.jpg" 
+            alt="Yakisoba Artesanal na Chapa" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover object-center filter brightness-[0.85] contrast-[1.12]"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
         <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
           <span class="text-rose-400 uppercase tracking-widest text-[10px] font-bold block">Vapor & Conforto</span>
@@ -250,11 +283,16 @@
 
       <!-- Card Imagem 2: Flambado Maçaricado com Ovas -->
       <div id="fogo-card-2" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
-        <img 
-          src="/imagens/imgi_19_673740382_122167708862734250_4983277055982216717_n.jpg" 
-          alt="Uramaki Especial Flambado com Ovas" 
-          class="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.15]"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_19_673740382_122167708862734250_4983277055982216717_n.webp" type="image/webp">
+          <img 
+            src="/imagens/imgi_19_673740382_122167708862734250_4983277055982216717_n.jpg" 
+            alt="Uramaki Especial Flambado com Ovas" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.15]"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
         <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
           <span class="text-amber-400 uppercase tracking-widest text-[10px] font-bold block">Maçaricado na Hora</span>
@@ -280,11 +318,16 @@
     
     <!-- Background Panorâmico do Balcão e Sushimen (imgi_45) -->
     <div class="absolute inset-0 z-0">
-      <img 
-        src="/imagens/imgi_45_656846837_878308148590250_1481939372004233875_n.jpg" 
-        alt="Balcão de Sushimen e Salão do IWÁ Sushi" 
-        class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-[1.15]"
-      >
+      <picture>
+        <source srcset="/imagens/imgi_45_656846837_878308148590250_1481939372004233875_n.webp" type="image/webp">
+        <img 
+          src="/imagens/imgi_45_656846837_878308148590250_1481939372004233875_n.jpg" 
+          alt="Balcão de Sushimen e Salão do IWÁ Sushi" 
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-[1.15]"
+        >
+      </picture>
       <div class="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/60"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-black/60"></div>
     </div>
@@ -338,11 +381,16 @@
 
       <!-- Coluna Direita: Cocktail Autoral Exclusivo (imgi_37) -->
       <div id="salao-cocktail-layer" class="lg:col-span-5 relative h-[360px] sm:h-[440px] lg:h-[540px] overflow-hidden bg-black border border-white/15">
-        <img 
-          src="/imagens/imgi_37_657387336_18580603855056286_2368161702113220944_n.jpg" 
-          alt="Cocktail Autoral da Casa com Flores e Espuma" 
-          class="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.08]"
-        >
+        <picture>
+          <source srcset="/imagens/imgi_37_657387336_18580603855056286_2368161702113220944_n.webp" type="image/webp">
+          <img 
+            src="/imagens/imgi_37_657387336_18580603855056286_2368161702113220944_n.jpg" 
+            alt="Cocktail Autoral da Casa com Flores e Espuma" 
+            loading="lazy"
+            decoding="async"
+            class="w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.08]"
+          >
+        </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
 
         <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
@@ -363,11 +411,16 @@
     
     <!-- Background Cinematic Feast (imgi_39) -->
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img 
-        src="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.jpg" 
-        alt="Banquete de Rodízio IWÁ Sushi" 
-        class="w-full h-full object-cover object-center filter brightness-[0.28] contrast-[1.18]"
-      >
+      <picture>
+        <source srcset="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.webp" type="image/webp">
+        <img 
+          src="/imagens/imgi_39_657070303_18090994775183335_4478202904917339520_n.jpg" 
+          alt="Banquete de Rodízio IWÁ Sushi" 
+          loading="lazy"
+          decoding="async"
+          class="w-full h-full object-cover object-center filter brightness-[0.28] contrast-[1.18]"
+        >
+      </picture>
       <div class="absolute inset-0 bg-gradient-to-t from-[#050607] via-[#050607]/80 to-[#050607]/90"></div>
     </div>
 
