@@ -303,30 +303,32 @@
     <!-- Conteúdo Tipográfico Pinned -->
     <div class="relative z-20 w-full max-w-7xl mx-auto p-6 sm:p-12 md:p-16 flex flex-col justify-center h-full">
       
-      <!-- Bloco Primário de Texto -->
-      <div id="rigor-text-primary" class="max-w-2xl space-y-6">
-        <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block">
-          01 // O RIGOR DO CORTE
-        </span>
-        <h2 class="font-['Syne'] text-4xl sm:text-6xl md:text-7xl font-black uppercase text-white leading-[0.92] tracking-tight">
-          O tempo exato entre a lâmina do sushiman e o seu paladar.
-        </h2>
-        <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-base sm:text-lg font-light leading-relaxed max-w-xl">
-          No IWÁ, a culinária oriental começa no rigor diário dos pescados nobres. Cada fatia de salmão, atum e peixe branco é preparada no momento do pedido, preservando o frescor, o brilho natural e a textura ideal do ingrediente.
-        </p>
-      </div>
+      <div class="relative w-full max-w-2xl">
+        <!-- Bloco Primário de Texto -->
+        <div id="rigor-text-primary" class="w-full space-y-4 sm:space-y-6">
+          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block">
+            01 // O RIGOR DO CORTE
+          </span>
+          <h2 class="font-['Syne'] text-3xl sm:text-6xl md:text-7xl font-black uppercase text-white leading-[0.92] tracking-tight">
+            O tempo exato entre a lâmina do sushiman e o seu paladar.
+          </h2>
+          <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-sm sm:text-lg font-light leading-relaxed max-w-xl">
+            No IWÁ, a culinária oriental começa no rigor diário dos pescados nobres. Cada fatia de salmão, atum e peixe branco é preparada no momento do pedido, preservando o frescor, o brilho natural e a textura ideal do ingrediente.
+          </p>
+        </div>
 
-      <!-- Bloco Secundário de Revelação -->
-      <div id="rigor-text-secondary" class="max-w-2xl space-y-6 mt-8 opacity-0 translate-y-6">
-        <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-amber-400 font-bold block">
-          MÃOS QUE RECEBEM & PREPARAM
-        </span>
-        <h3 class="font-['Syne'] text-3xl sm:text-5xl font-black uppercase text-white leading-tight">
-          Hospitalidade servida à mesa.
-        </h3>
-        <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-sm sm:text-base font-light leading-relaxed max-w-lg">
-          Do balcão dos mestres à sua mesa, cada prato é finalizado com reduções autorais, raspas frescas e louças artesanais selecionadas.
-        </p>
+        <!-- Bloco Secundário de Revelação (Sobreposição Óptica Perfeita sem Colisão) -->
+        <div id="rigor-text-secondary" class="w-full space-y-4 sm:space-y-6 absolute inset-0 opacity-0 translate-y-6 pointer-events-none">
+          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-amber-400 font-bold block">
+            MÃOS QUE RECEBEM & PREPARAM
+          </span>
+          <h3 class="font-['Syne'] text-2xl sm:text-5xl font-black uppercase text-white leading-tight">
+            Hospitalidade servida à mesa.
+          </h3>
+          <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-xs sm:text-base font-light leading-relaxed max-w-lg">
+            Do balcão dos mestres à sua mesa, cada prato é finalizado com reduções autorais, raspas frescas e louças artesanais selecionadas.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -340,34 +342,34 @@
   <section id="scene-fogo-section" class="w-screen h-screen h-[100dvh] relative overflow-hidden flex flex-col justify-between bg-[#040405] z-30" aria-label="A Temperatura da Cozinha e Pratos Quentes">
     
     <!-- Kinetic Background Marquee Text (Decorativo) -->
-    <div class="absolute inset-x-0 bottom-24 sm:bottom-32 flex items-center pointer-events-none overflow-hidden z-0 select-none" aria-hidden="true">
-      <div id="fogo-marquee-band" class="font-['Syne'] text-[14vw] font-black uppercase whitespace-nowrap text-stroke will-change-transform leading-none opacity-40">
+    <div class="absolute inset-x-0 bottom-16 sm:bottom-32 flex items-center pointer-events-none overflow-hidden z-0 select-none" aria-hidden="true">
+      <div id="fogo-marquee-band" class="font-['Syne'] text-[18vw] md:text-[14vw] font-black uppercase whitespace-nowrap text-stroke will-change-transform leading-none opacity-25 sm:opacity-40">
         QUENTES & CHAPA • MAÇARICO AO VIVO • YAKISOBA ARTESANAL • IWÁ SUSHI • 
       </div>
     </div>
 
     <!-- Header da Cena com Z-index Superior e Isolamento de Leitura -->
-    <div class="relative z-10 p-6 sm:p-12 md:p-16 max-w-7xl mx-auto w-full">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8 bg-gradient-to-b from-[#040405] via-[#040405]/95 to-transparent">
+    <div class="relative z-10 p-4 sm:p-12 md:p-16 max-w-7xl mx-auto w-full">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-6 border-b border-white/10 pb-4 sm:pb-8 bg-gradient-to-b from-[#040405] via-[#040405]/95 to-transparent">
         <div>
-          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block mb-2">
+          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block mb-1 sm:mb-2">
             02 // A TEMPERATURA DA COZINHA
           </span>
-          <h2 class="font-['Syne'] text-3xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.95] tracking-tight max-w-2xl">
+          <h2 class="font-['Syne'] text-2xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.95] tracking-tight max-w-2xl">
             Do maçarico na hora à chapa de ferro fumegante.
           </h2>
         </div>
-        <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-sm sm:text-base font-light max-w-md leading-relaxed">
+        <p class="font-['Plus_Jakarta_Sans'] text-stone-300 text-xs sm:text-base font-light max-w-md leading-relaxed">
           O rodízio do IWÁ equilibra a delicadeza dos cortes frios com o calor estalando dos pratos quentes e preparações maçaricadas no salão.
         </p>
       </div>
     </div>
 
     <!-- Díptico de Aço e Fogo: Yakisoba (imgi_47) & Uramaki Flambado (imgi_19) -->
-    <div class="relative z-10 max-w-7xl mx-auto w-full px-6 sm:px-12 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-8 my-auto">
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-12 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-8 my-auto">
       
       <!-- Card Imagem 1: Yakisoba Fumegante -->
-      <div id="fogo-card-1" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
+      <div id="fogo-card-1" class="relative h-[165px] xs:h-[190px] sm:h-[260px] md:h-[360px] overflow-hidden bg-black border border-white/15">
         <picture>
           <source srcset="/imagens/imgi_47_643756478_122162936516734250_6045644277589814957_n.webp" type="image/webp">
           <img 
@@ -379,14 +381,14 @@
           >
         </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
-        <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
-          <span class="text-rose-400 uppercase tracking-widest text-[10px] font-bold block">Vapor & Conforto</span>
-          <p class="text-white font-bold text-sm sm:text-base mt-0.5">Yakisoba artesanal servido fumegante em bowl de cerâmica</p>
+        <div class="absolute bottom-3 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 font-['Space_Grotesk'] text-xs">
+          <span class="text-rose-400 uppercase tracking-widest text-[9px] sm:text-[10px] font-bold block">Vapor & Conforto</span>
+          <p class="text-white font-bold text-xs sm:text-base mt-0.5">Yakisoba artesanal servido fumegante em bowl de cerâmica</p>
         </div>
       </div>
 
       <!-- Card Imagem 2: Flambado Maçaricado com Ovas -->
-      <div id="fogo-card-2" class="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden bg-black border border-white/15">
+      <div id="fogo-card-2" class="relative h-[165px] xs:h-[190px] sm:h-[260px] md:h-[360px] overflow-hidden bg-black border border-white/15">
         <picture>
           <source srcset="/imagens/imgi_19_673740382_122167708862734250_4983277055982216717_n.webp" type="image/webp">
           <img 
@@ -398,16 +400,16 @@
           >
         </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
-        <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
-          <span class="text-amber-400 uppercase tracking-widest text-[10px] font-bold block">Maçaricado na Hora</span>
-          <p class="text-white font-bold text-sm sm:text-base mt-0.5">Uramakis e gunkans flambados com ovas de massago e azeite trufado</p>
+        <div class="absolute bottom-3 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 font-['Space_Grotesk'] text-xs">
+          <span class="text-amber-400 uppercase tracking-widest text-[9px] sm:text-[10px] font-bold block">Maçaricado na Hora</span>
+          <p class="text-white font-bold text-xs sm:text-base mt-0.5">Uramakis e gunkans flambados com ovas de massago e azeite trufado</p>
         </div>
       </div>
 
     </div>
 
     <!-- Rodapé de Continuidade -->
-    <div class="relative z-10 p-6 sm:p-12 md:p-16 max-w-7xl mx-auto w-full flex items-center justify-between text-xs font-['Space_Grotesk'] text-stone-400 border-t border-white/10 uppercase tracking-wider">
+    <div class="relative z-10 p-4 sm:p-12 md:p-16 max-w-7xl mx-auto w-full flex items-center justify-between text-[11px] sm:text-xs font-['Space_Grotesk'] text-stone-400 border-t border-white/10 uppercase tracking-wider">
       <div>Teppanyaki • Gyoza • Rolinhos • Shimeji na Manteiga</div>
       <div class="hidden sm:block">IWÁ Sushi SBC // Gastronomia Viva</div>
     </div>
@@ -436,23 +438,23 @@
       <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-transparent to-black/60"></div>
     </div>
 
-    <div class="relative z-10 w-full max-w-7xl mx-auto p-6 sm:p-12 md:p-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <div class="relative z-10 w-full max-w-7xl mx-auto p-4 sm:p-12 md:p-16 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 items-center">
       
       <!-- Coluna Esquerda: Citação Real Google & Infraestrutura do Salão -->
-      <div class="lg:col-span-7 space-y-8">
+      <div class="lg:col-span-7 space-y-4 sm:space-y-8">
         
         <div>
-          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block mb-2">
+          <span class="font-['Space_Grotesk'] text-xs sm:text-sm uppercase tracking-[0.35em] text-rose-400 font-bold block mb-1 sm:mb-2">
             03 // O AMBIENTE & HOSPITALIDADE
           </span>
-          <h2 class="font-['Syne'] text-3xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.98] tracking-tight">
+          <h2 class="font-['Syne'] text-2xl sm:text-5xl md:text-6xl font-black uppercase text-white leading-[0.98] tracking-tight">
             Um restaurante pensado para você relaxar.
           </h2>
         </div>
 
         <!-- Citação Real Google (Sem Card Artificial) -->
-        <div class="border-l-2 border-rose-500 pl-6 py-2 space-y-3">
-          <blockquote class="font-['Plus_Jakarta_Sans'] italic text-stone-200 text-base sm:text-lg md:text-xl font-light leading-relaxed m-0">
+        <div class="border-l-2 border-rose-500 pl-4 sm:pl-6 py-1 sm:py-2 space-y-2 sm:space-y-3">
+          <blockquote class="font-['Plus_Jakarta_Sans'] italic text-stone-200 text-sm sm:text-lg md:text-xl font-light leading-relaxed m-0">
             "A comida é super fresca, drinks incríveis e a área kids com monitora fez toda a diferença para podermos jantar com calma!"
           </blockquote>
           <a 
@@ -460,32 +462,32 @@
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="Ver 4.971 avaliações e nota 4.8 do IWÁ Sushi no Google Maps (abre em nova aba)"
-            class="inline-block font-['Space_Grotesk'] text-xs uppercase tracking-widest text-stone-400 hover:text-white transition-colors"
+            class="inline-block font-['Space_Grotesk'] text-[11px] sm:text-xs uppercase tracking-widest text-stone-400 hover:text-white transition-colors"
           >
             <span class="text-amber-400 font-bold">4.8 ★★★★★</span> // AVALIAÇÃO REAL NO GOOGLE (4.971 OPINIÕES) <span aria-hidden="true">↗</span>
           </a>
         </div>
 
         <!-- Pilares de Conforto Físico Verificados -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 font-['Space_Grotesk'] text-xs uppercase tracking-wider text-stone-300">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 pt-2 sm:pt-4 font-['Space_Grotesk'] text-xs uppercase tracking-wider text-stone-300">
           <div>
-            <span class="text-white font-bold block text-sm mb-0.5">Área Kids</span>
-            <p class="text-stone-400 text-[11px]">Com monitora dedicada para as crianças</p>
+            <span class="text-white font-bold block text-xs sm:text-sm mb-0.5">Área Kids</span>
+            <p class="text-stone-400 text-[10px] sm:text-[11px]">Com monitora dedicada para as crianças</p>
           </div>
           <div>
-            <span class="text-white font-bold block text-sm mb-0.5">Estacionamento</span>
-            <p class="text-stone-400 text-[11px]">Convênio com o estacionamento ao lado</p>
+            <span class="text-white font-bold block text-xs sm:text-sm mb-0.5">Estacionamento</span>
+            <p class="text-stone-400 text-[10px] sm:text-[11px]">Convênio com o estacionamento ao lado</p>
           </div>
           <div>
-            <span class="text-white font-bold block text-sm mb-0.5">Mezanino & Bar</span>
-            <p class="text-stone-400 text-[11px]">Iluminação intimista e drinks autorais</p>
+            <span class="text-white font-bold block text-xs sm:text-sm mb-0.5">Mezanino & Bar</span>
+            <p class="text-stone-400 text-[10px] sm:text-[11px]">Iluminação intimista e drinks autorais</p>
           </div>
         </div>
 
       </div>
 
       <!-- Coluna Direita: Cocktail Autoral Exclusivo (imgi_37) -->
-      <div id="salao-cocktail-layer" class="lg:col-span-5 relative h-[360px] sm:h-[440px] lg:h-[540px] overflow-hidden bg-black border border-white/15">
+      <div id="salao-cocktail-layer" class="lg:col-span-5 relative h-[210px] xs:h-[250px] sm:h-[360px] lg:h-[540px] overflow-hidden bg-black border border-white/15">
         <picture>
           <source srcset="/imagens/imgi_37_657387336_18580603855056286_2368161702113220944_n.webp" type="image/webp">
           <img 
@@ -498,9 +500,9 @@
         </picture>
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
 
-        <div class="absolute bottom-6 left-6 right-6 font-['Space_Grotesk'] text-xs">
-          <span class="text-rose-400 uppercase tracking-widest text-[10px] font-bold block">Bar & Coquetelaria</span>
-          <p class="text-white font-bold text-base mt-0.5">Drinks autorais servidos com espuma artesanal e flores comestíveis</p>
+        <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 font-['Space_Grotesk'] text-xs">
+          <span class="text-rose-400 uppercase tracking-widest text-[9px] sm:text-[10px] font-bold block">Bar & Coquetelaria</span>
+          <p class="text-white font-bold text-xs sm:text-base mt-0.5">Drinks autorais servidos com espuma artesanal e flores comestíveis</p>
         </div>
       </div>
 
